@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BondConverter/obj/Debug
+/BondConverter/bin/Debug
+*.user
+/BondConverterTest/bin/Debug
+/packages
+/BondConverterTest/obj/Debug
