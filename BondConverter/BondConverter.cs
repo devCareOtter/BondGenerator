@@ -86,7 +86,7 @@ namespace BondConverter
             List<string> members = new List<string>();
 
             int index = 0;
-            foreach (var p in t.GetProperties(System.Reflection.BindingFlags.Public | BindingFlags.Instance)
+            foreach (var p in t.GetProperties(BindingFlags.DeclaredOnly | System.Reflection.BindingFlags.Public | BindingFlags.Instance)
                 .Where(x => x.CanRead && x.CanWrite))
                 //.Where(x => Attribute.IsDefined(x, typeof(DataMemberAttribute))))
             {
